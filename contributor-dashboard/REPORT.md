@@ -152,7 +152,48 @@ may exercise judgment that deviates slightly from strict numeric thresholds:
 
 ---
 
-## 4. Findings
+---
+
+## 4. Extra Credit — Team-Level View
+
+The autorater's tier classification directly addresses the team-level view
+extra credit. Every contributor is grouped into one of four clusters based on
+their LLM-assessed impact profile:
+
+| Tier | What it represents |
+|------|-------------------|
+| **Core Maintainer** | High impact, high consistency — the project's backbone |
+| **Active Contributor** | Consistent, meaningful output but not at maintainer level |
+| **Occasional Contributor** | Some real contributions but irregular or low volume |
+| **Drive-by Contributor** | Single or very limited engagement, low depth |
+
+These are not just score buckets. The LLM evaluates each contributor's PR
+quality, problem significance, review behavior, and activity span together,
+so the tier reflects the nature of their engagement — not just how often
+they show up.
+
+From the 15 rated contributors:
+- **1 Core Maintainer** — `steipete`, the clear project anchor with the
+  highest consistency score (5) and the broadest codebase coverage by far
+- **12 Active Contributors** — a healthy mid-tier of contributors making
+  real, regular improvements across various parts of the codebase
+- **2 Occasional Contributors** — `Sid-Qin` and `cpojer`, both with
+  signs of real capability but lacking the consistency or merge success
+  of the Active tier
+
+The **Scope tab** in the dashboard adds the "by area of codebase" dimension
+to this clustering — each contributor's most-touched directories are listed,
+so you can see whether contributors are specialists (focused on one area)
+or generalists (spread across the codebase). `steipete` is the only true
+generalist in the top 15; most Active Contributors are concentrated in
+2–3 directories.
+
+Together, the tier classification and scope data give a complete team-level
+picture: who the core is, who the reliable contributors are, what parts of
+the codebase each person owns, and who the project cannot afford to lose.
+
+
+## 5. Findings
 
 ### Finding 1 — Extreme bus factor concentration
 
@@ -210,7 +251,7 @@ as one of the more reliable contributors in the project.
 
 ---
 
-## 5. Limitations
+## 6. Limitations
 
 ### Diff truncation hides large changes
 
@@ -271,7 +312,7 @@ runs, not a strict programmatic threshold.
 
 ---
 
-## 6. What I'd Build Next
+## 7. What I'd Build Next
 
 ### Trajectory analysis
 
@@ -300,7 +341,7 @@ tight score clustering seen in this run.
 
 ---
 
-## 7. Reflection
+## 8. Reflection
 
 ### What worked well
 
