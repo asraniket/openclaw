@@ -164,8 +164,6 @@ The dashboard opens automatically in your browser at **http://localhost:8501**
 If it doesn't open automatically, navigate to http://localhost:8501 manually.
 ---
 ## 🔄 Re-fetching Fresh Data
-The data files in `data/` are committed to the repo so you can run the dashboard
-immediately without needing API keys. To re-fetch fresh data from GitHub:
 ```bash
 python fetch_data.py    # fetches everything fresh (overwrites existing files)
 python process_data.py  # re-processes
